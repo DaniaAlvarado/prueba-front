@@ -10,7 +10,8 @@ import icon3 from '../icons/Vector (1).svg'
 import icon4 from '../icons/Vector (2).svg';
 import app from '../icons/image 3.svg'
 import questions from '../icons/7720439 1.svg';
-import founder from '../icons/image 8.svg'
+
+import Footer from '../footer/Footer';
 
 function Clientes() {
   return (
@@ -116,14 +117,7 @@ function Clientes() {
             <p className='info'>Tipos de servicios <br /> disponibles</p>
           </div>
         </section>
-        <section className='eight'>
-          <img src={founder} alt="cofounder" />
-          <div>
-            <p className='words'>"TodoServy está hecho para ayudar a encontrar el proveedor de servicios que necesitas, y a los profesionales a digitalizar su oferta de servicios, tener un mayor alcance de clientes y un nuevo canal de ventas."</p>
-            <p className='name'>Juan Sarmiento</p>
-            <p className='founder'>President & Co-Founder</p>
-          </div>
-        </section>
+        <Footer/>
       </div>
     </>
   )

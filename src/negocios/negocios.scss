@@ -1,0 +1,57 @@
+@import '../universal.scss';
+
+.negocios{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    p{
+        font-size: 26px;
+    }
+    &__parrafo{
+        font-weight: 500;    
+    }
+    &__canal{
+        font-weight: 700; 
+    }
+    &__button{
+        width: 348px;
+        height: 50px;
+        border: none;
+        border-radius: 40px;
+        padding: 10px 38px;
+        background-color: $blue;
+        color: white;
+        font-weight: 500;
+        font-size: 20px;
+        font-family: $font__family;
+    }
+}
+
+.scroll{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    img{
+        width: 900px;
+        height: 629px;
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+    }
+    p{
+        font-weight: 600;
+        font-size: 18px;
+    }
+}
+
+.one{
+    width: 100%;
+    padding-top: 50px;
+    h2{
+        text-align: center;
+        padding: 40px;
+    }
+    &__image{
+        display: flex;
+    }
+}
