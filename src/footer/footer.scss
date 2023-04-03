@@ -1,3 +1,61 @@
+@import '../universal.scss';
+
+.six{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    h5{
+        text-align: center;
+        font-weight: 700;
+        font-size: 55px;
+    } 
+    .questions{
+        display: flex;
+        width: 100%;
+        img{
+            width: 30%;
+            height: 420px;
+        }
+        div{
+            display: flex;
+            flex-direction: column;
+            width: 65%;
+            padding: 20px;
+            gap: 25px;
+            p{
+                font-weight: 700;
+                font-size: 24px;
+            }
+        }
+    }
+}
+
+.seven{
+    display: flex;
+    width: 100%;
+    gap: 60px;
+    justify-content: center;
+    div{
+        width: 266px;
+        height: 188px;
+        border-radius: 38px;
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+        padding-top: 25px;
+        p{
+            font-weight: 500;
+            text-align: center;
+        }
+        .number{
+            font-size: 50px;
+            color: $blue;
+        }
+        .info{
+            font-size: 18px;
+        }
+    }
+}
+
 .eight{
     display: flex;
     width: 100%;

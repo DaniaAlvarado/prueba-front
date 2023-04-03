@@ -9,9 +9,8 @@ import icon2 from '../icons/Vector.svg';
 import icon3 from '../icons/Vector (1).svg'
 import icon4 from '../icons/Vector (2).svg';
 import app from '../icons/image 3.svg'
-import questions from '../icons/7720439 1.svg';
-
 import Footer from '../footer/Footer';
+import Todo from '../todoServyEs/Todo';
 
 function Clientes() {
   return (
@@ -43,22 +42,7 @@ function Clientes() {
             <img className='down' src={perfil3} alt="perfil3" />
           </div>
         </section>
-        <section className='three'>
-          <div>
-            <hr />
-            <h4 className='tittle'>TodoServy es <br /> Universal</h4>
-            <p>En TodoServy, tienes acceso a todos los servicios que ofrecen profesionales, independientes, negocios y empresas en tu ciudad.</p>
-            <div>Conoce más aquí</div>
-            <hr />
-          </div>
-          <div>
-            <hr />
-            <h4 className='tittle'>TodoServy es <br /> Unificado</h4>
-            <p>En TodoServy encuentras todas las reseñas y valoraciones que están en internet sobre cada profesional, independiente y negocio registrado.</p>
-            <div>Conoce mas aquí</div>
-            <hr />
-          </div>
-        </section>
+        <Todo/>
         <section className='four'>
           <div>
             <img src={icon2} alt="icon" />
@@ -84,39 +68,7 @@ function Clientes() {
             <p className='free'>¡Es 100% gratis!</p>
             <button>Descarga la App</button>
           </div>
-        </section>
-        <section className='six'>
-          <h5>Preguntas Frecuentes</h5>
-          <div className='questions'>
-            <img src={questions} alt="questions" />
-            <div>
-              <p>¿Para qué sirve TodoServy?</p>
-              <hr />
-              <p>¿Cómo me registro en TodoServy?</p>
-              <hr />
-              <p>¿TodoServy funciona a nivel nacional en Colombia?</p>
-              <hr />
-              <p>¿Cómo verifico mi perfil de usuario en TodoServy?</p>
-              <hr />
-              <p>¿Cuánto me cuesta solicitar un servicio?</p>
-              <hr />
-            </div>
-          </div>
-        </section>
-        <section className='seven'>
-          <div>
-            <p className='number'>+2.000</p>
-            <p className='info'>Negocios, Profesionales <br /> e independientes</p>
-          </div>
-          <div>
-            <p className='number'>11</p>
-            <p className='info'>Ciudades en <br /> Ecuador</p>
-          </div>
-          <div>
-            <p className='number'>120</p>
-            <p className='info'>Tipos de servicios <br /> disponibles</p>
-          </div>
-        </section>
+        </section>   
         <Footer/>
       </div>
     </>
