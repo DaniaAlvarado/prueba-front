@@ -3,6 +3,9 @@ import './profesional.scss';
 import perfil1 from '../icons/perfil_pofesional01 2.svg';
 import profesional from '../icons/mockup_profesional_dispositivos 1.svg'
 import Header from '../header/Header';
+import Todo from '../todoServyEs/Todo';
+import Agendar from '../agendamiento/Agendar';
+import Footer from '../footer/Footer';
 
 function Profesional() {
     return (
@@ -12,7 +15,7 @@ function Profesional() {
                 <p className='profesional__parrafo'>Si eres profesional o independiente, ofrece tus servicios y muestra tus reseñas <br /> y calificaciones, <b>garantiza pagos seguros y gana popularidad en tu ciudad.</b> </p>
                 <button className='profesional__button'>¡Crea tu perfil Profesional/Independiente gratis!</button>
             </section>
-            <section className='scroll'>
+            <section className='scroll3'>
                 <img src={perfil1} alt="perfilN" />
                 <p>Tu perfil personalizado mostrando categorías, estudios, horarios, reseñas y mucho más</p>
                 <h2>TodoServy es visibilidad y confianza <br /> frente a tus clientes</h2>
@@ -30,10 +33,13 @@ function Profesional() {
                     <p>En TodoServy validamos tus licencias, diplomas y credenciales para dar más confianza a los usuarios.</p>
                     <p>Toda la información en nuestra plataforma universal y unificada serán un motivo de confianza para que tus clientes agenden tus servicios.</p>
                 </div>
-                <div className='double_right'>
+                <div className='double__right'>
                     <img  src={profesional} alt="perfil1" />
                 </div>
             </section>
+            <Todo/>
+            <Agendar/>
+            <Footer/>
         </>
     )
 }

@@ -36,7 +36,7 @@ function Clientes() {
             <p>TodoServy realiza una verificación de credenciales, licencias y diplomas para garantizar la calidad, la experiencia y el conocimiento de los negocios, profesionales e independientes.</p>
             <p>Tu servicio está garantizado.</p>
           </div>
-          <div className='second_right'>
+          <div className='second__right'>
             <img className='up' src={perfil1} alt="perfil1" />
             <img className='half' src={perfilN} alt="perfilN" />
             <img className='down' src={perfil3} alt="perfil3" />

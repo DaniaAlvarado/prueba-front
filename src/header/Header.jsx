@@ -1,8 +1,13 @@
 import React from 'react';
 import logo from '../icons/logo_header.svg'
 import './header.scss';
+import { useNavigate } from 'react-router-dom';
+import movile from '../icons/Group 145.svg'
 
 function Header() {
+
+  const navigate = useNavigate();
+
   return (
     <>
       <header>
@@ -20,9 +25,9 @@ function Header() {
           </div>
         </div>
         <div className='buttons'>
-          <button className='left'>Busco un servicio</button>
-          <button>Soy un Negocio</button>
-          <button className='right'>Soy un Profesional</button>
+          <button className='left' onClick={() => { navigate('/') }}>Busco un servicio</button>
+          <button onClick={() => { navigate('/negocios') }}>Soy un Negocio</button>
+          <button className='right' onClick={() => { navigate('/profesionales') }}>Soy un Profesional</button>
         </div>
         <h1>TodoServy <br/>
           Directorio Premium Online</h1>

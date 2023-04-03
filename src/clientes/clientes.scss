@@ -1,17 +1,15 @@
 @import '../universal.scss';
 
-body{
-    font-family: $font__family;
-    width: 100vw;
-}
-
 .main{
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 20px;
+    gap: 40px;
+    padding-top: 50px;
     &__parrafo{
         text-align: center;
+        font-weight: 500;
+        font-size: 26px;
     }
     &__button{
         font-size: 20px;
@@ -35,15 +33,14 @@ body{
 
 .second{
     display: flex;
-    padding: 50px;
-    background-color: antiquewhite;
     width: 100%;
+    justify-content: center;
+    padding-top: 50px;
     &__left{
         display: flex;
         flex-direction: column;
         gap: 54px;
         width: 50%;
-        background-color: aquamarine;
         h3{
             font-weight: 700;
             font-size: 36px;
@@ -59,31 +56,24 @@ body{
         }
     }
     &__right{
-        background-color: azure;
+        display: flex;
         width: 40%;
+        flex-direction: column;
         img{
-            width: 422px;
-            height: 263px;
-            position: absolute;
-        }
-        .up{
-            top: 0px;
-            right: 0px;
-        }
-        .half{
-            top: 15px;
-            left: 0px;
+            max-width: 422px;
+            max-height: 263px;
         }
     }
 }
 
 .four{
     display: flex;
-    padding: 50px;
+    justify-content: center;
     width: 100%;
     gap: 20px;
+    padding-top: 80px;
     div{
-        width: 30%;
+        width: 28%;
         img{
             width: 43px;
             height: 50px;
@@ -102,8 +92,9 @@ body{
 .five{
     display: flex;
     width: 100%;
-    padding: 50px;
+    justify-content: center;
     gap: 50px;
+    padding-top: 100px;
     img{
         width: 50%;
         height: 620px;
@@ -114,7 +105,6 @@ body{
         width: 35%;
         padding: 70px 30px;
         gap: 30px;
-        background-color: antiquewhite;
         .app{
             font-weight: 700;
             font-size: 40px;
