@@ -29,6 +29,52 @@
         }
     }   
 
+    .slider {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    
+        &__container{
+            display: grid;
+            grid-template-columns: 40px 1fr 40px;
+            gap: 1em;
+            align-items: center;
+        }
+        &__body{
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            align-items: center;
+            grid-column: 2/3;
+            grid-row: 1/2;
+            // opacity: 0;
+            pointer-events: none;
+        }
+        // &__body--show{
+        //     pointer-events: unset;
+        //     opacity: 1;
+        // }
+        &__arrow{
+            width: 90%;
+            height: 50px;
+            cursor: pointer;
+        }
+    
+        &__img {
+            width: 900px;
+            height: 629px;
+            transition: 1s;
+            box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+        }
+        h2{
+            font-weight: 700;
+            font-size: 40px;
+            text-align: center;
+            padding-top: 60px;
+        }
+    }
+
     .service {
         display: flex;
         width: 90%;

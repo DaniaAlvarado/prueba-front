@@ -1,12 +1,38 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './agendar.scss';
-import negocio from '../icons/banner-snegocio1.svg';
+import slider1 from '../icons/banner-snegocio1.svg';
+import slider2 from '../icons/banner-agen-p2.svg';
+import slider3 from '../icons/banner-agen-p3.svg';
+import slider4 from '../icons/banner-agen-p4.svg';
+import arrow from '../icons/Vector (5).svg';
+import arrow2 from '../icons/Vector (6).svg';
 import icon3 from '../icons/Vector (1).svg'
 import icon4 from '../icons/Vector (2).svg';
 import icon5 from '../icons/Vector (3).svg';
 import icon6 from '../icons/Vector (4).svg';
 
 function Agendar() {
+
+  const images = [slider1, slider2, slider3, slider4]
+    const [selectedIndex, setSelectedIndex] = useState(0);
+    const [selectedImage, setSelectedImage] = useState(images[0]);
+    //const [selectedText, setSelectedText] = useState(text[0])
+
+    const newImage = (index, images, next = true) => {
+        const condition = next ? selectedIndex < images.length - 1 : selectedIndex > 0;
+        const nextIndex = next ? (condition ? selectedIndex + 1 : 0) : condition ? selectedIndex - 1 : images.length - 1;
+        setSelectedImage(images[nextIndex]);
+        //setSelectedText(text[nextIndex]);
+        setSelectedIndex(nextIndex)
+    }
+
+    const previousImg = () => {
+        newImage(selectedIndex, images, false)
+    }
+
+    const nextImg = () => {
+        newImage(selectedIndex, images)
+    }
   return (
     <>
       <section className='two'>
@@ -16,7 +42,18 @@ function Agendar() {
           <p className='optimiza'>¡Optimiza tu negocio y obtén más agendamientos hoy mismo!</p>
           <p>Con nuestro sistema de agendamiento en línea, podrás tener una visión detallada de tu equipo de trabajo y sus disponibilidades. En el perfil de negocio, tus clientes podrán programar sus servicios de acuerdo con la disponibilidad de tu equipo.</p>
           <p>Recuerda que, si eres “Negocio Free”, tienes un límite de agendamientos sobre tus servicios, pero si te haces “Negocio Premium” la cantidad de agendamientos será ilimitada.</p>
-          <img src={negocio} alt="banner" />
+        </div>
+        <div className='slider'>
+          <div className='slider__container container'>
+            <img src={arrow} onClick={previousImg} className='slider__arrow' id='before' />
+            <div className='slider__body slider__body--show' data-id='1'>
+              <figure className='slider__picture'>
+                <img src={selectedImage} alt='slider' className='slider__img' />
+              </figure>
+              <p className='slider__info'>Tu perfil personalizado mostrando categorías, estudios, horarios, reseñas y mucho más</p>
+            </div>
+            <img src={arrow2} onClick={nextImg} className='slider__arrow' id='next' />
+          </div>
         </div>
         <div className='service'>
           <div>
