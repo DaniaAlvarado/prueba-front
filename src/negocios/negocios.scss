@@ -6,7 +6,7 @@
     align-items: center;
     gap: 40px;
     padding-top: 40px;
-
+    width: 100%;
     p {
         font-size: 26px;
     }
@@ -38,7 +38,7 @@
     flex-direction: column;
     align-items: center;
     gap: 20px;
-
+    width: 100%;
     &__container{
         display: grid;
         grid-template-columns: 40px 1fr 40px;
@@ -50,15 +50,8 @@
         flex-direction: column;
         gap: 20px;
         align-items: center;
-        grid-column: 2/3;
-        grid-row: 1/2;
-        // opacity: 0;
         pointer-events: none;
     }
-    // &__body--show{
-    //     pointer-events: unset;
-    //     opacity: 1;
-    // }
     &__arrow{
         width: 90%;
         height: 50px;
@@ -66,7 +59,7 @@
     }
 
     &__img {
-        width: 900px;
+        width: 800px;
         height: 629px;
         transition: 1s;
         box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
@@ -136,3 +129,57 @@
     }
 }
 
+@media (max-width:875px){
+    .negocios{
+        p{
+            font-size: 18px;
+            text-align: center;
+        }
+        &__button{
+            font-size: 16px;
+            width: 90%;
+            height: 44px;
+        }
+    }
+    .slider{
+        &__container{
+            width: 100%;
+            display: flex;
+        }
+        &__body{
+            img{
+                width: 300px;
+                height: 212px;
+            }
+        }
+        &__arrow{
+            display: none;
+        }
+    }
+    .one{
+        h2{
+            display: none;
+        }
+        &__image {
+            flex-direction: column-reverse;
+            align-items: center;
+            div{
+                width: 90%;
+                .tittleP{
+                    font-size: 20px;
+                    line-height: 30px;
+                }
+                p{
+                    font-size: 14px;
+                }
+                button{
+                    font-size: 16px;
+                }
+            }
+            img{
+                width: 90%;
+                height: 332px;
+            }
+        }
+    }
+}

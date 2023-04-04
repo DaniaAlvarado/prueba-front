@@ -14,21 +14,14 @@ import Footer from '../footer/Footer';
 import Agendar from '../agendamiento/Agendar';
 
 function Negocios() {
-  const text = ['Tu perfil personalizado mostrando categorías, estudios, horarios, reseñas y mucho más', 
-  'Obtén un sello de verificación de tus credenciales, licencias y diplomas.', 
-  'Muestra todos los servicios que prestas, sin importar el tipo.', 
-  'Tu perfil profesional contará con toda la información, reviews y ratings de toda presencia online', 
-  'Perfil optimizado para que puedas ofrecer una opción de agendamiento en línea.'];
   const images = [slider1, slider2, slider3, slider4, slider5]
   const [selectedIndex, setSelectedIndex] = useState(0);
   const [selectedImage, setSelectedImage] = useState(images[0]);
-  //const [selectedText, setSelectedText] = useState(text[0])
 
   const newImage = (index, images,  next=true) => {
     const condition = next ? selectedIndex < images.length -1 : selectedIndex > 0;
     const nextIndex =  next ? (condition  ? selectedIndex + 1 : 0) : condition ? selectedIndex -1 : images.length - 1;
     setSelectedImage(images[nextIndex]);
-    //setSelectedText(text[nextIndex]);
     setSelectedIndex(nextIndex)
   }
 
@@ -51,38 +44,14 @@ function Negocios() {
         </section>
         <section className='slider'>
           <div className='slider__container container'>
-            <img  src={arrow} onClick={previousImg} className='slider__arrow' id='before'/>
-            <div className='slider__body slider__body--show' data-id='1'>
-              <figure className='slider__picture'>
-                <img src={selectedImage} alt='slider' className='slider__img' />
+            <img  src={arrow} onClick={previousImg} className='slider__arrow'/>
+            <div className='slider__body' >
+              <figure>
+              <img src={selectedImage} alt='slider' className='slider__img' />
               </figure>
               <p className='slider__info'>Tu perfil personalizado mostrando categorías, estudios, horarios, reseñas y mucho más</p>
             </div>
-            {/* <div className='slider__body' data-id='2'>
-              <figure className='slider__picture'>
-                <img src={slider2} className='slider__img' />
-              </figure>
-              <p className='slider__info'>Obtén un sello de verificación de tus credenciales, licencias y diplomas.</p>
-            </div>
-            <div className='slider__body' data-id='3'>
-              <figure className='slider__picture'>
-                <img src={slider3} className='slider__img' />
-              </figure>
-              <p className='slider__info'>Muestra todos los servicios que prestas, sin importar el tipo.</p>
-            </div>
-            <div className='slider__body' data-id='4'>
-              <figure className='slider__picture'>
-                <img src={slider4} className='slider__img' />
-              </figure>
-              <p className='slider__info'>Tu perfil profesional contará con toda la información, reviews y ratings de toda presencia online</p>
-            </div>
-            <div className='slider__body' data-id='5'>
-              <figure className='slider__picture'>
-                <img src={slider5} className='slider__img' />
-              </figure>
-              <p className='slider__info'>Perfil optimizado para que puedas ofrecer una opción de agendamiento en línea.</p>
-            </div> */}
-            <img src={arrow2} onClick={nextImg} className='slider__arrow' id='next'/>
+            <img src={arrow2} onClick={nextImg} className='slider__arrow'/>
           </div>
         </section>
         <section className='one'>

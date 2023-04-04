@@ -15,7 +15,7 @@ function Todo() {
             <hr />
             <h4 className='tittle'>TodoServy es <br /> Unificado</h4>
             <p>En TodoServy encuentras todas las reseñas y valoraciones que están en internet sobre cada profesional, independiente y negocio registrado.</p>
-            <div>Conoce mas aquí</div>
+            <div>Conoce más aquí</div>
             <hr />
           </div>
         </section>

@@ -16,13 +16,11 @@ function Agendar() {
   const images = [slider1, slider2, slider3, slider4]
     const [selectedIndex, setSelectedIndex] = useState(0);
     const [selectedImage, setSelectedImage] = useState(images[0]);
-    //const [selectedText, setSelectedText] = useState(text[0])
 
     const newImage = (index, images, next = true) => {
         const condition = next ? selectedIndex < images.length - 1 : selectedIndex > 0;
         const nextIndex = next ? (condition ? selectedIndex + 1 : 0) : condition ? selectedIndex - 1 : images.length - 1;
         setSelectedImage(images[nextIndex]);
-        //setSelectedText(text[nextIndex]);
         setSelectedIndex(nextIndex)
     }
 
@@ -45,14 +43,14 @@ function Agendar() {
         </div>
         <div className='slider'>
           <div className='slider__container container'>
-            <img src={arrow} onClick={previousImg} className='slider__arrow' id='before' />
-            <div className='slider__body slider__body--show' data-id='1'>
+            <img src={arrow} onClick={previousImg} className='slider__arrow'/>
+            <div className='slider__body '>
               <figure className='slider__picture'>
                 <img src={selectedImage} alt='slider' className='slider__img' />
               </figure>
               <p className='slider__info'>Tu perfil personalizado mostrando categorías, estudios, horarios, reseñas y mucho más</p>
             </div>
-            <img src={arrow2} onClick={nextImg} className='slider__arrow' id='next' />
+            <img src={arrow2} onClick={nextImg} className='slider__arrow'  />
           </div>
         </div>
         <div className='service'>

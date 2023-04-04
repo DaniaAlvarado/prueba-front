@@ -36,6 +36,7 @@
 
 .seven{
     display: flex;
+    flex-wrap: wrap;
     width: 100%;
     gap: 60px;
     justify-content: center;
@@ -67,7 +68,7 @@
     gap: 40px;
     padding-top: 80px;
     img{
-        width: 530px;
+        max-width: 530px;
         height: 530px;
         border-radius: 40px;
     }
@@ -89,6 +90,60 @@
         .founder{
             font-weight: 600;
             font-size: 20px;
+        }
+    }
+}
+
+@media (max-width:875px){
+    .six{
+        h5{
+            font-size: 30px;
+        }
+        .questions{
+            flex-direction: column;
+            align-items: center;
+            img{
+                width: 155px;
+                height: 155px;
+            }
+            div{
+                width: 90%;
+                p{
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+    .seven{
+        div{
+            width: 200px;
+            height: 160px;
+            .number{
+                font-size: 40px;
+            }
+            .info{
+                font-size: 18px;
+            }
+        }
+    }
+    .eight{
+        flex-direction: column;
+        align-items: center;
+        img{
+            width: 90%;
+            height: 316px;
+        }
+        div{
+            width: 90%;
+            .words{
+                font-size: 20px;
+            }
+            .name{
+                font-size: 18px;
+            }
+            .founder{
+                font-size: 16px;
+            }
         }
     }
 }

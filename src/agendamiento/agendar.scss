@@ -173,3 +173,68 @@
         // border-radius: 40px;
     }
 }
+
+@media (max-width:875px){
+    .two{
+        .agenda{
+            h3{
+                font-size: 20px;
+            }
+            p{
+                font-size: 14px;
+            }
+        }
+        .slider{
+            &__container{
+                width: 100%;
+                display: flex;
+            }
+            &__body{
+                img{
+                    width: 300px;
+                    height: 212px;
+                }
+            }
+            // &__arrow{
+            //     display: none;
+            // }
+        }
+        .service{
+            flex-direction: column;
+            div{
+                width: 100%;
+                .tittle2{
+                    font-size: 20px;
+                }
+                .description{
+                    font-size: 14px;
+                }
+            }
+        }
+        .cuadrado{
+            .beneficio, .premium{
+                font-size: 20px;
+            }
+            .registro{
+                flex-direction: column;
+                gap: 20px;
+                text-align: center;
+                p{
+                    font-size: 14px;
+                    width: 90%;
+                }
+            }
+            .plus{
+                aside{
+                    p{
+                        font-size: 14px;
+                    }
+                }
+            }
+            button{
+                font-size: 16px;
+                height: 44px;
+            }
+        }
+    }
+}
