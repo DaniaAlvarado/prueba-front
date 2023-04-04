@@ -23,40 +23,40 @@ function Negocios() {
           <p className='negocios__canal'>¡Tu nuevo canal de ventas!</p>
           <button className='negocios__button'>¡Registra tu negocio gratis!</button>
         </section>
-        <section className='scroll'>
-          <div>
-            <img src={arrow} alt="arrow" />
-            <div>
-              <figure>
-                <img src={slider1} alt="" />
+        <section className='slider'>
+          <div className='slider__container container'>
+            <img src={arrow} className='slider__arrow' id='before'/>
+            <div className='slider__body slider__body--show' data-id='1'>
+              <figure className='slider__picture'>
+                <img src={slider1} className='slider__img' />
               </figure>
-              <p>Tu perfil personalizado mostrando categorías, estudios, horarios, reseñas y mucho más</p>
+              <p className='slider__info'>Tu perfil personalizado mostrando categorías, estudios, horarios, reseñas y mucho más</p>
             </div>
-            <div>
-              <figure>
-                <img src={slider2} alt="" />
+            <div className='slider__body' data-id='2'>
+              <figure className='slider__picture'>
+                <img src={slider2} className='slider__img' />
               </figure>
-              <p>Obtén un sello de verificación de tus credenciales, licencias y diplomas.</p>
+              <p className='slider__info'>Obtén un sello de verificación de tus credenciales, licencias y diplomas.</p>
             </div>
-            <div>
-              <figure>
-                <img src={slider3} alt="" />
+            <div className='slider__body' data-id='3'>
+              <figure className='slider__picture'>
+                <img src={slider3} className='slider__img' />
               </figure>
-              <p>Muestra todos los servicios que prestas, sin importar el tipo.</p>
+              <p className='slider__info'>Muestra todos los servicios que prestas, sin importar el tipo.</p>
             </div>
-            <div>
-              <figure>
-                <img src={slider4} alt="" />
+            <div className='slider__body' data-id='4'>
+              <figure className='slider__picture'>
+                <img src={slider4} className='slider__img' />
               </figure>
-              <p>Tu perfil profesional contará con toda la información, reviews y ratings de toda presencia online</p>
+              <p className='slider__info'>Tu perfil profesional contará con toda la información, reviews y ratings de toda presencia online</p>
             </div>
-            <div>
-              <figure>
-                <img src={slider5} alt="" />
+            <div className='slider__body' data-id='5'>
+              <figure className='slider__picture'>
+                <img src={slider5} className='slider__img' />
               </figure>
-              <p>Perfil optimizado para que puedas ofrecer una opción de agendamiento en línea.</p>
+              <p className='slider__info'>Perfil optimizado para que puedas ofrecer una opción de agendamiento en línea.</p>
             </div>
-            <img src={arrow2} alt="arrow" />
+            <img src={arrow2} className='slider__arrow' id='next'/>
           </div>
         </section>
         <section className='one'>
