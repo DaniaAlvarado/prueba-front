@@ -44,7 +44,7 @@ function Profesional() {
                 <button className='profesional__button'>¡Crea tu perfil Profesional/Independiente gratis!</button>
             </section>
             <section className='slider'>
-                <div className='slider__container container'>
+                <div className='slider__container'>
                     <img src={arrow} onClick={previousImg} className='slider__arrow' />
                     <div className='slider__body' >
                         <figure className='slider__picture'>

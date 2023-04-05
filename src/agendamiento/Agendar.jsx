@@ -42,7 +42,7 @@ function Agendar() {
           <p>Recuerda que, si eres “Negocio Free”, tienes un límite de agendamientos sobre tus servicios, pero si te haces “Negocio Premium” la cantidad de agendamientos será ilimitada.</p>
         </div>
         <div className='slider'>
-          <div className='slider__container container'>
+          <div className='slider__container'>
             <img src={arrow} onClick={previousImg} className='slider__arrow'/>
             <div className='slider__body '>
               <figure className='slider__picture'>

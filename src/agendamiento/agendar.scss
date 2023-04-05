@@ -7,67 +7,63 @@
     width: 100%;
     gap: 20px;
 
-    .agenda{
+    .agenda {
         width: 85%;
         display: flex;
         flex-direction: column;
         padding-top: 60px;
         gap: 30px;
+
         h3 {
             font-weight: 700;
             font-size: 40px;
             text-align: center;
         }
-    
+
         p {
             font-weight: 500;
             font-size: 18px;
             text-align: center;
         }
+
         .optimiza {
             font-weight: 700;
         }
-    }   
+    }
 
     .slider {
         display: flex;
         flex-direction: column;
         align-items: center;
         gap: 20px;
-    
-        &__container{
-            display: grid;
-            grid-template-columns: 40px 1fr 40px;
-            gap: 1em;
+
+        &__container {
+            display: flex;
             align-items: center;
         }
-        &__body{
+
+        &__body {
             display: flex;
             flex-direction: column;
             gap: 20px;
             align-items: center;
-            grid-column: 2/3;
-            grid-row: 1/2;
-            // opacity: 0;
             pointer-events: none;
         }
-        // &__body--show{
-        //     pointer-events: unset;
-        //     opacity: 1;
-        // }
-        &__arrow{
-            width: 90%;
+
+        &__arrow {
+            width: 50px;
             height: 50px;
             cursor: pointer;
         }
-    
+
         &__img {
             width: 900px;
             height: 629px;
             transition: 1s;
             box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
         }
-        h2{
+
+        h2 {
             font-weight: 700;
             font-size: 40px;
             text-align: center;
@@ -117,6 +113,7 @@
         align-items: center;
         gap: 40px;
         padding: 60px;
+
         .beneficio {
             font-weight: 700;
             font-size: 40px;
@@ -130,11 +127,12 @@
 
         }
 
-        .registro{
+        .registro {
             display: flex;
             width: 100%;
             justify-content: space-between;
-            p{
+
+            p {
                 width: 45%;
                 text-align: left;
                 font-weight: 600;
@@ -142,21 +140,24 @@
             }
         }
 
-        .plus{
+        .plus {
             display: flex;
             flex-direction: column;
             gap: 20px;
-            aside{
+
+            aside {
                 display: flex;
                 gap: 50px;
-                p{
+
+                p {
                     font-weight: 700;
                     font-size: 22px;
                     line-height: 34px;
                 }
             }
         }
-        button{
+
+        button {
             width: 309px;
             height: 57px;
             border: none;
@@ -166,6 +167,7 @@
             font-weight: 700;
             font-size: 22px;
         }
+
         // background: linear-gradient(249.64deg, #078BFB 0%, #06F6C4 100%);
         // background-color: transparent;
         // border: 8px solid;
@@ -174,64 +176,74 @@
     }
 }
 
-@media (max-width:875px){
-    .two{
-        .agenda{
-            h3{
+@media (max-width:875px) {
+    .two {
+        .agenda {
+            h3 {
                 font-size: 20px;
             }
-            p{
+
+            p {
                 font-size: 14px;
             }
         }
-        .slider{
-            &__container{
-                width: 100%;
-                display: flex;
-            }
-            &__body{
-                img{
+
+        .slider {
+            &__body {
+                img {
                     width: 300px;
                     height: 212px;
                 }
             }
-            // &__arrow{
-            //     display: none;
-            // }
+
+            &__arrow {
+                width: 10px;
+            }
         }
-        .service{
+
+        .service {
             flex-direction: column;
-            div{
+
+            div {
                 width: 100%;
-                .tittle2{
+
+                .tittle2 {
                     font-size: 20px;
                 }
-                .description{
+
+                .description {
                     font-size: 14px;
                 }
             }
         }
-        .cuadrado{
-            .beneficio, .premium{
+
+        .cuadrado {
+
+            .beneficio,
+            .premium {
                 font-size: 20px;
             }
-            .registro{
+
+            .registro {
                 flex-direction: column;
                 gap: 20px;
                 text-align: center;
-                p{
+
+                p {
                     font-size: 14px;
                     width: 90%;
                 }
             }
-            .plus{
-                aside{
-                    p{
+
+            .plus {
+                aside {
+                    p {
                         font-size: 14px;
                     }
                 }
             }
-            button{
+
+            button {
                 font-size: 16px;
                 height: 44px;
             }

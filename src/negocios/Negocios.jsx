@@ -43,7 +43,7 @@ function Negocios() {
           <button className='negocios__button'>¡Registra tu negocio gratis!</button>
         </section>
         <section className='slider'>
-          <div className='slider__container container'>
+          <div className='slider__container'>
             <img  src={arrow} onClick={previousImg} className='slider__arrow'/>
             <div className='slider__body' >
               <figure>

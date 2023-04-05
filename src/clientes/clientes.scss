@@ -141,7 +141,7 @@
         }
         &__button{
             font-size: 16px;
-            width: 80%;
+            width: 130px;
             height: 35px;
         }
         img{
@@ -168,9 +168,21 @@
         }
         &__right{
             width: 90%;
+            align-items: center;
             img{
                 width: 169px;
                 
+            }
+        }
+    }
+    .four{
+        div{
+            width: 90%;
+            .tittle2{
+                font-size: 20px;
+            }
+            .description{
+                font-size: 14px;
             }
         }
     }
