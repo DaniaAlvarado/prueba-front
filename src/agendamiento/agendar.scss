@@ -55,6 +55,9 @@
             height: 50px;
             cursor: pointer;
         }
+        &__arrow-buttons{
+            display: none;
+        }
 
         &__img {
             width: 900px;
@@ -112,7 +115,9 @@
         flex-direction: column;
         align-items: center;
         gap: 40px;
-        padding: 60px;
+        border: 6px solid #078BFB;
+        border-radius: 20px;
+        padding: 60px 0 60px 0;
 
         .beneficio {
             font-weight: 700;
@@ -122,14 +127,13 @@
         .premium {
             font-weight: 900;
             font-size: 40px;
-            color: linear-gradient(90deg, #078BFB 13.08%, #06F6C4 83.54%),
-                linear-gradient(0deg, #1B1B1B, #1B1B1B);
+            color: #4293F7
 
         }
 
         .registro {
             display: flex;
-            width: 100%;
+            width: 92%;
             justify-content: space-between;
 
             p {
@@ -168,11 +172,6 @@
             font-size: 22px;
         }
 
-        // background: linear-gradient(249.64deg, #078BFB 0%, #06F6C4 100%);
-        // background-color: transparent;
-        // border: 8px solid;
-        // border-image-source: linear-gradient(249.64deg, #078BFB 0%, #06F6C4 100%);
-        // border-radius: 40px;
     }
 }
 
@@ -189,15 +188,30 @@
         }
 
         .slider {
+            &__container{
+                flex-direction: column;
+                align-items: center;
+            }
+        
             &__body {
                 img {
                     width: 300px;
                     height: 212px;
                 }
+                p{
+                    display: none;
+                }
             }
-
-            &__arrow {
-                width: 10px;
+            &__arrow{
+                display: none;
+            }
+            &__arrow-buttons{
+                display: flex;
+                gap: 80px;
+                img{
+                    width: 26px;
+                    height: 13px;
+                }
             }
         }
 
@@ -236,7 +250,9 @@
             }
 
             .plus {
+                width: 90%;
                 aside {
+                    gap: 10px;
                     p {
                         font-size: 14px;
                     }

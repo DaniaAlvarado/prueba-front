@@ -14,23 +14,23 @@ import icon6 from '../icons/Vector (4).svg';
 function Agendar() {
 
   const images = [slider1, slider2, slider3, slider4]
-    const [selectedIndex, setSelectedIndex] = useState(0);
-    const [selectedImage, setSelectedImage] = useState(images[0]);
+  const [selectedIndex, setSelectedIndex] = useState(0);
+  const [selectedImage, setSelectedImage] = useState(images[0]);
 
-    const newImage = (index, images, next = true) => {
-        const condition = next ? selectedIndex < images.length - 1 : selectedIndex > 0;
-        const nextIndex = next ? (condition ? selectedIndex + 1 : 0) : condition ? selectedIndex - 1 : images.length - 1;
-        setSelectedImage(images[nextIndex]);
-        setSelectedIndex(nextIndex)
-    }
+  const newImage = (index, images, next = true) => {
+    const condition = next ? selectedIndex < images.length - 1 : selectedIndex > 0;
+    const nextIndex = next ? (condition ? selectedIndex + 1 : 0) : condition ? selectedIndex - 1 : images.length - 1;
+    setSelectedImage(images[nextIndex]);
+    setSelectedIndex(nextIndex)
+  }
 
-    const previousImg = () => {
-        newImage(selectedIndex, images, false)
-    }
+  const previousImg = () => {
+    newImage(selectedIndex, images, false)
+  }
 
-    const nextImg = () => {
-        newImage(selectedIndex, images)
-    }
+  const nextImg = () => {
+    newImage(selectedIndex, images)
+  }
   return (
     <>
       <section className='two'>
@@ -43,14 +43,18 @@ function Agendar() {
         </div>
         <div className='slider'>
           <div className='slider__container'>
-            <img src={arrow} onClick={previousImg} className='slider__arrow'/>
+            <img src={arrow} onClick={previousImg} className='slider__arrow' />
             <div className='slider__body '>
               <figure className='slider__picture'>
                 <img src={selectedImage} alt='slider' className='slider__img' />
               </figure>
               <p className='slider__info'>Tu perfil personalizado mostrando categorías, estudios, horarios, reseñas y mucho más</p>
             </div>
-            <img src={arrow2} onClick={nextImg} className='slider__arrow'  />
+            <img src={arrow2} onClick={nextImg} className='slider__arrow' />
+            <div className='slider__arrow-buttons'>
+              <img src={arrow} onClick={previousImg} />
+              <img src={arrow2} onClick={nextImg} />
+            </div>
           </div>
         </div>
         <div className='service'>

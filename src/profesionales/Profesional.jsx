@@ -52,7 +52,11 @@ function Profesional() {
                         </figure>
                         <p className='slider__info'>Tu perfil personalizado mostrando categorías, estudios, horarios, reseñas y mucho más</p>
                     </div>
-                    <img src={arrow2} onClick={nextImg} className='slider__arrow'/>
+                    <img src={arrow2} onClick={nextImg} className='slider__arrow' />
+                    <div className='slider__arrow-buttons'>
+                        <img src={arrow} onClick={previousImg} />
+                        <img src={arrow2} onClick={nextImg} />
+                    </div>
                 </div>
                 <h2>TodoServy es visibilidad y confianza <br /> frente a tus clientes</h2>
             </section>

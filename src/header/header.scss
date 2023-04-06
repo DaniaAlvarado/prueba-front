@@ -11,17 +11,21 @@ header {
     align-items: center;
     gap: 30px;
     width: 100%;
+    h1 {
+        text-align: center;
+        font-weight: 800;
+        font-size: 50px;
+    }
 }
 
 .header {
     font-size: $font__size;
-    font-weight: 500;
     display: flex;
     width: 98%;
     height: 70px;
     padding: 15px;
     justify-content: space-between;
-
+    font-weight: 500;
     img {
         width: 180px;
     }
@@ -90,15 +94,14 @@ header {
     }
 }
 
-h1 {
-    display: flex;
-    justify-content: center;
-    font-weight: 800;
-    font-size: 50px;
-    text-align: center;
-}
+
 
 @media (max-width:875px){
+    header{
+        h1{
+            font-size: 30px;
+        }
+    }
     .header{
         justify-content: center;
         &__info{
@@ -108,15 +111,13 @@ h1 {
             display: none;
         }
     }
-}
-
-.buttons{
-    button{
-        width: 30%;
+    
+    .buttons{
+        button{
+            width: 30%;
+        }
     }
 }
 
-h1{
-    font-size: 30px;
-    width: 90%;
-}
+
+

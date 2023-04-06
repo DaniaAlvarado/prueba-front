@@ -20,16 +20,26 @@
             width: 30%;
             height: 420px;
         }
-        div{
+        .container{
             display: flex;
             flex-direction: column;
             width: 60%;
-            padding: 20px;
+            padding: 15px;
             gap: 25px;
-            p{
-                font-weight: 700;
-                font-size: 24px;
+            .arrow{
+                display: flex;
+                justify-content: space-between;
+                width: 95%;
+                p{
+                    font-weight: 700;
+                    font-size: 24px;
+                }
+                img{
+                    width: 28px;
+                    height: 17px;
+                }
             }
+            
         }
     }
 }
@@ -107,10 +117,15 @@
                 width: 155px;
                 height: 155px;
             }
-            div{
+            .container{
                 width: 90%;
-                p{
-                    font-size: 14px;
+                .arrow{
+                    p{
+                        font-size: 14px;
+                    }
+                    img{
+                        width: 20px;
+                    }
                 }
             }
         }

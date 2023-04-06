@@ -2,6 +2,7 @@ import React from 'react';
 import './footer.scss';
 import founder from '../icons/image 8.svg'
 import questions from '../icons/7720439 1.svg';
+import arrow from '../icons/Vector (7).svg';
 
 function Footer() {
   return (
@@ -10,16 +11,31 @@ function Footer() {
         <h5>Preguntas Frecuentes</h5>
         <div className='questions'>
           <img src={questions} alt="questions" />
-          <div>
-            <p>¿Para qué sirve TodoServy?</p>
+          <div className='container'>
+            <div className='arrow'>
+              <p>¿Para qué sirve TodoServy?</p>
+              <img src={arrow} alt="arrow" />
+            </div>
             <hr />
-            <p>¿Cómo me registro en TodoServy?</p>
+            <div className='arrow'>
+              <p>¿Cómo me registro en TodoServy?</p>
+              <img src={arrow} alt="arrow" />
+            </div>
             <hr />
-            <p>¿TodoServy funciona a nivel nacional en Colombia?</p>
+            <div className='arrow'>
+              <p>¿TodoServy funciona a nivel nacional en Colombia?</p>
+              <img src={arrow} alt="arrow" />
+            </div>
             <hr />
-            <p>¿Cómo verifico mi perfil de usuario en TodoServy?</p>
+            <div className='arrow'>
+              <p>¿Cómo verifico mi perfil de usuario en TodoServy?</p>
+              <img src={arrow} alt="arrow" />
+            </div>
             <hr />
-            <p>¿Cuánto me cuesta solicitar un servicio?</p>
+            <div className='arrow'>
+              <p>¿Cuánto me cuesta solicitar un servicio?</p>
+              <img src={arrow} alt="arrow" />
+            </div>
             <hr />
           </div>
         </div>
